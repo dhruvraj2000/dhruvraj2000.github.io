@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dhruv Raj Kumawat — Software Developer</title>
+<meta name="description" content="Full Stack Developer specializing in React.js, Java, and Spring Boot. 3+ years building scalable web applications." />
+<meta name="theme-color" content="#08090d" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dhruv Raj Kumawat — Software Developer" />
+<meta property="og:description" content="Full Stack Developer specializing in React.js, Java, and Spring Boot. 3+ years building scalable web applications." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Dhruv Raj Kumawat — Software Developer" />
+<meta name="twitter:description" content="Full Stack Developer specializing in React.js, Java, and Spring Boot." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-mark">DRK<span class="dot">.</span></div>
+  <div class="preloader-bar"><span id="preloaderFill"></span></div>
+</div>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">DRK<span class="dot">.</span></a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="hero-eyebrow reveal">
+        <span class="status-dot"></span> Available for new opportunities
+      </p>
+      <h1 class="hero-title reveal">
+        <span class="line">Dhruv Raj</span>
+        <span class="line accent" data-text="Kumawat">Kumawat</span>
+      </h1>
+      <p class="hero-role reveal">
+        <span class="tw-bracket">&lt;</span><span class="typewriter" id="typewriter"></span><span class="cursor-blink">_</span><span class="tw-bracket">/&gt;</span>
+      </p>
+      <p class="hero-desc reveal">
+        Full Stack Developer with <strong>3+ years</strong> of experience building scalable web
+        applications using React.js, Java, and Spring Boot — now exploring
+        Generative AI and LLM-powered tooling.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary magnetic"><span>View Projects</span></a>
+        <a href="#contact" class="btn btn-outline magnetic"><span>Get In Touch</span></a>
+        <a href="Dhruv_Raj_Kumawat_Resume.pdf" download class="btn btn-ghost magnetic">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Resume</span>
+        </a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://linkedin.com/in/dhruvrajkumawat" target="_blank" rel="noopener" aria-label="LinkedIn" class="magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:dhruvkumawat321@gmail.com" aria-label="Email" class="magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+        <a href="tel:+919664137155" aria-label="Phone" class="magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="code-card" id="codeCard">
+        <div class="code-card-head">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span class="code-card-title">developer.json</span>
+        </div>
+        <pre class="code-card-body"><span class="tk-key">"name"</span>: <span class="tk-str">"Dhruv Raj Kumawat"</span>,
+<span class="tk-key">"role"</span>: <span class="tk-str">"Full Stack Developer"</span>,
+<span class="tk-key">"experience"</span>: <span class="tk-num">3</span>,
+<span class="tk-key">"stack"</span>: [
+  <span class="tk-str">"React.js"</span>, <span class="tk-str">"Java"</span>,
+  <span class="tk-str">"Spring Boot"</span>
+],
+<span class="tk-key">"currentlyLearning"</span>: <span class="tk-str">"Generative AI"</span>,
+<span class="tk-key">"available"</span>: <span class="tk-bool">true</span></pre>
+      </div>
+      <div class="float-chip chip-a">⚛️ React.js</div>
+      <div class="float-chip chip-b">☕ Java</div>
+      <div class="float-chip chip-c">🍃 Spring Boot</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>React.js</span><span>•</span><span>Java</span><span>•</span><span>Spring Boot</span><span>•</span><span>JavaScript ES6+</span><span>•</span><span>REST APIs</span><span>•</span><span>MySQL</span><span>•</span><span>Oracle</span><span>•</span><span>Redux Toolkit</span><span>•</span><span>Generative AI</span><span>•</span><span>Prompt Engineering</span><span>•</span>
+    <span>React.js</span><span>•</span><span>Java</span><span>•</span><span>Spring Boot</span><span>•</span><span>JavaScript ES6+</span><span>•</span><span>REST APIs</span><span>•</span><span>MySQL</span><span>•</span><span>Oracle</span><span>•</span><span>Redux Toolkit</span><span>•</span><span>Generative AI</span><span>•</span><span>Prompt Engineering</span><span>•</span>
+  </div>
+</div>
+
+<main>
+
+  <section id="about" class="section">
+    <div class="section-inner">
+      <p class="section-label reveal">01 — About</p>
+      <h2 class="section-title reveal">Profile Summary</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Full Stack Developer with <strong>3+ years of experience</strong> building
+            scalable web applications using React.js, JavaScript (ES6+), Java, and
+            Spring Boot. Experienced in integrating REST APIs and handling
+            end-to-end application workflows across the full software
+            development life cycle.
+          </p>
+          <p>
+            Actively enhancing expertise in <strong>Generative AI and LLM-based
+            applications</strong>, with hands-on experience using AI-powered tools
+            like Claude CLI for debugging, troubleshooting, and optimizing
+            existing software solutions.
+          </p>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-num">3+</span>
+              <span class="fact-label">Years Experience</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">4</span>
+              <span class="fact-label">Major Projects</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">100+</span>
+              <span class="fact-label">Problems Solved</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-education reveal">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div>
+              <h4>Scaler</h4>
+              <p class="edu-sub">Software Development &amp; Problem Solving</p>
+              <p class="edu-year">2024</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div>
+              <h4>Rajasthan Technical University, Kota</h4>
+              <p class="edu-sub">B.Tech, Electrical Engineering · 7+ CGPA</p>
+              <p class="edu-year">2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label reveal">02 — Experience</p>
+      <h2 class="section-title reveal">Where I've Worked</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-head">
+              <h3>Software Development Engineer (Full Stack)</h3>
+              <span class="tl-date">Jun 2024 — Present</span>
+            </div>
+            <p class="tl-company">E Connect Solutions Pvt. Ltd.</p>
+            <ul>
+              <li>Executed backend development using Java, JSP, and Spring Boot, enhancing web application performance throughout the full SDLC; integrated jQuery for dynamic front-end interactions.</li>
+              <li>Engineered MVC-based applications by developing controllers and JSP pages, optimizing backend logic with Oracle and MySQL databases.</li>
+              <li>Streamlined data retrieval and analytics by configuring Oracle SQL Server and executing complex SQL queries for real-time insights.</li>
+              <li>Created and deployed WAR files on Jenkins, successfully launching applications on Tomcat Server with zero downtime.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-head">
+              <h3>Software Development Engineer (Full Stack)</h3>
+              <span class="tl-date">Jun 2023 — May 2024</span>
+            </div>
+            <p class="tl-company">ARCGATE</p>
+            <ul>
+              <li>Designed and implemented backend business logic and database interactions using Spring MVC and DBMS (MySQL/Oracle) for secure data storage and retrieval.</li>
+              <li>Worked on the ARCGATE Self Service Portal, contributing to development and enhancement of web modules using Java, Spring Framework, JSP, and JDBC.</li>
+              <li>Collaborated with the development team to build and maintain enterprise-level applications, perform bug fixes, and optimize application performance.</li>
+              <li>Developed CRUD functionalities, form validations, and role-based access features to improve portal usability and data accuracy.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="section-label reveal">03 — Projects</p>
+      <h2 class="section-title reveal">Things I've Built</h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <span class="project-num">01</span>
+          <div class="project-top">
+            <span class="project-icon">🇮🇳</span>
+            <span class="project-tag">Web Platform</span>
+          </div>
+          <h3>WorkFor Viksit Bharat</h3>
+          <p>Dynamic JSP-based platform integrating APIs to collect socio-economic indicators for real-time decision-making tools.</p>
+          <ul class="project-points">
+            <li>Intuitive, responsive, user-focused interface with JSP</li>
+            <li>Integrated APIs for socio-economic data collection</li>
+            <li>Built with HTML, CSS, Bootstrap, JavaScript</li>
+            <li>AI-assisted issue resolution &amp; bug fixing via Claude CLI</li>
+          </ul>
+          <div class="project-stack">
+            <span>JSP</span><span>Bootstrap</span><span>JavaScript</span><span>Claude CLI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <span class="project-num">02</span>
+          <div class="project-top">
+            <span class="project-icon">📋</span>
+            <span class="project-tag">Government Portal</span>
+          </div>
+          <h3>NHAI Internship Application Portal</h3>
+          <p>Portal to manage internship applications and candidate records with robust validation and optimized data access.</p>
+          <ul class="project-points">
+            <li>Dynamic JSP pages for application &amp; record management</li>
+            <li>Form handling and validation to prevent invalid entries</li>
+            <li>Responsive UI with HTML, CSS, Bootstrap, jQuery</li>
+            <li>Optimized SQL queries — cut average load time by 35%</li>
+          </ul>
+          <div class="project-stack">
+            <span>JSP</span><span>jQuery</span><span>SQL</span><span>Claude CLI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <span class="project-num">03</span>
+          <div class="project-top">
+            <span class="project-icon">⚡</span>
+            <span class="project-tag">React SPA</span>
+          </div>
+          <h3>Rajasthan Recruitment Portal</h3>
+          <p>Converted a legacy JSP application into a modern React.js SPA, dramatically improving responsiveness and UX.</p>
+          <ul class="project-points">
+            <li>Legacy JSP → modern React.js Single Page Application</li>
+            <li>Reusable components, React Hooks, scalable state handling</li>
+            <li>REST API integration with lazy loading &amp; modular structure</li>
+            <li>Significantly improved maintainability and load time</li>
+          </ul>
+          <div class="project-stack">
+            <span>React.js</span><span>Hooks</span><span>REST API</span><span>Claude CLI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal featured">
+          <span class="project-num">04</span>
+          <div class="project-top">
+            <span class="project-icon">🤖</span>
+            <span class="project-tag">AI / NLP</span>
+          </div>
+          <h3>Smart Resume Summarizer</h3>
+          <p>AI-powered resume summarizer that extracts skills, experience, and achievements from uploaded PDF resumes.</p>
+          <ul class="project-points">
+            <li>Built with Java, Spring Boot, and NLP libraries</li>
+            <li>REST APIs handling parsing &amp; summary generation in &lt;3s</li>
+            <li>NLP-based ranking of key candidate information</li>
+            <li>Responsive React.js frontend for seamless PDF upload</li>
+          </ul>
+          <div class="project-stack">
+            <span>Java</span><span>Spring Boot</span><span>NLP</span><span>React.js</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label reveal">04 — Skills</p>
+      <h2 class="section-title reveal">Tools &amp; Technologies</h2>
+
+      <div class="skills-layout">
+        <div class="skill-bars reveal">
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Java &amp; Spring Boot</span><span class="skill-pct">92%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:92%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>React.js / JavaScript (ES6+)</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:88%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>REST API Design &amp; Integration</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>SQL (MySQL / Oracle)</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>JSP / MVC Architecture</span><span class="skill-pct">87%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:87%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Generative AI &amp; Prompt Engineering</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill fill-alt" style="--w:70%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-cards reveal">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <div class="chip-row">
+              <span class="chip">JavaScript (ES6+)</span><span class="chip">Java</span><span class="chip">Python</span><span class="chip">.NET</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <div class="chip-row">
+              <span class="chip">React.js</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span><span class="chip">jQuery</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <div class="chip-row">
+              <span class="chip">Spring Boot</span><span class="chip">REST APIs</span><span class="chip">JSP</span><span class="chip">JDBC</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>State Management</h3>
+            <div class="chip-row">
+              <span class="chip">Redux Toolkit</span><span class="chip">Context API</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Databases</h3>
+            <div class="chip-row">
+              <span class="chip">MySQL</span><span class="chip">Oracle</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Tools &amp; DevOps</h3>
+            <div class="chip-row">
+              <span class="chip">Jenkins</span><span class="chip">Tomcat</span><span class="chip">Git</span>
+            </div>
+          </div>
+          <div class="skill-card glow">
+            <h3>AI / ML <span class="learning-badge">Learning</span></h3>
+            <div class="chip-row">
+              <span class="chip">Generative AI</span><span class="chip">LLM Basics</span><span class="chip">Prompt Engineering</span><span class="chip">Claude CLI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section">
+    <div class="section-inner">
+      <p class="section-label reveal">05 — Achievements</p>
+      <h2 class="section-title reveal">Certifications &amp; Milestones</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🏆</div>
+          <h3>100+ Problems Solved</h3>
+          <p>Solved 100+ programming problems on Scaler, sharpening DSA and problem-solving skills.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">⚛️</div>
+          <h3>React — The Comprehensive Guide</h3>
+          <p>In-depth coursework covering Hooks, React Router, and Redux for scalable frontend architecture.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🟨</div>
+          <h3>Complete JavaScript Course</h3>
+          <p>The Complete JavaScript Course (2022 Edition) — from beginner to expert.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🧠</div>
+          <h3>Low-Level Design</h3>
+          <p>Certified in Low-Level Design and Databases &amp; SQL — Scaler &amp; NSDC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label reveal">06 — Certificates</p>
+      <h2 class="section-title reveal">Verified Credentials</h2>
+      <div class="cert-grid">
+        <figure class="cert-card reveal" data-full="assets/certificates/dsa-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/dsa-scaler.png" alt="Data Structures & Algorithms certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>Data Structures &amp; Algorithms</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/java-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/java-scaler.png" alt="Java certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>Java</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/javascript-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/javascript-scaler.png" alt="JavaScript certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>JavaScript</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/springboot-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/springboot-scaler.png" alt="Backend Java Spring/Springboot certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>Backend (Java Spring/Springboot)</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/python-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/python-scaler.png" alt="Python certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>Python</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/lld-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/lld-scaler.png" alt="Low Level Design certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>Low Level Design</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/databases-sql-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/databases-sql-scaler.png" alt="Databases and SQL certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>Databases and SQL</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/mern-scaler.png">
+          <div class="cert-thumb"><img src="assets/certificates/mern-scaler.png" alt="MERN certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>MERN Stack</h3>
+            <p>Scaler Academy · Skill Mastery Certification</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/product-management-scaler.jpg">
+          <div class="cert-thumb"><img src="assets/certificates/product-management-scaler.jpg" alt="Product Management for Software Engineers certificate — Scaler" loading="lazy" /></div>
+          <figcaption>
+            <h3>Product Management for Software Engineers</h3>
+            <p>Scaler Academy · Certificate of Excellence · Issued Jun 28, 2026</p>
+          </figcaption>
+        </figure>
+        <figure class="cert-card reveal" data-full="assets/certificates/prompt-engineering-chatgpt.png">
+          <div class="cert-thumb"><img src="assets/certificates/prompt-engineering-chatgpt.png" alt="Prompt Engineering for ChatGPT certificate — Great Learning" loading="lazy" /></div>
+          <figcaption>
+            <h3>Prompt Engineering for ChatGPT</h3>
+            <p>Great Learning · Completed May 16, 2026</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img id="lightboxImg" src="" alt="Certificate preview" />
+  </div>
+
+  <section id="contact" class="section section-contact">
+    <div class="section-inner">
+      <p class="section-label reveal">07 — Contact</p>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <p class="contact-sub reveal">
+        Open to full-stack, backend, and AI-tooling opportunities. Reach out —
+        I usually respond within a day.
+      </p>
+      <div class="contact-grid reveal">
+        <a href="mailto:dhruvkumawat321@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">dhruvkumawat321@gmail.com</span>
+        </a>
+        <a href="tel:+919664137155" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 96641 37155</span>
+        </a>
+        <a href="https://linkedin.com/in/dhruvrajkumawat" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Dhruv Raj Kumawat</span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon">📍</span>
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Udaipur, Rajasthan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="logo footer-logo">DRK<span class="dot">.</span></a>
+    <p>Designed &amp; built by Dhruv Raj Kumawat © <span id="year"></span></p>
+    <div class="footer-socials">
+      <a href="https://linkedin.com/in/dhruvrajkumawat" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a href="mailto:dhruvkumawat321@gmail.com" aria-label="Email">@</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
