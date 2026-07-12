@@ -869,6 +869,44 @@ ul { list-style: none; }
   border-radius: 100px;
 }
 
+.project-links {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-top: 16px;
+  position: relative; z-index: 1;
+}
+.project-links a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.project-links a:hover { border-color: var(--accent); color: var(--accent); }
+
+.more-projects { margin-top: 40px; }
+.more-projects-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  margin-bottom: 14px;
+}
+.more-projects-list { display: flex; flex-wrap: wrap; gap: 12px; }
+.more-projects-list a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.more-projects-list a:hover { border-color: var(--accent); color: var(--accent); }
+.more-projects-list a span { font-weight: 400; color: var(--text-faint); }
+
 /* ===== Skills ===== */
 .skills-layout {
   display: grid;
